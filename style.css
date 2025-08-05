@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1f1f1f;
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 14px;
+    backdrop-filter: blur(10px);
+    background-color: rgb(82, 82, 82);
+}
+
+.logo {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bolder;
+}
+
+.logo h1 {
+    font-size: 2.3rem;
+}
+
+.logo h2 {
+    font-weight: bolder;
+    color: rgb(255, 225, 0);
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    border-radius: 23px;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+}
+
+.search input {
+    width: 100%;
+    border-radius: 23px;
+    border-top-right-radius: 0;
+    border: none;
+    border-bottom-right-radius: 0;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.sBtn {
+    background-color: #fff;
+    padding: 4.3px 10px;
+    border-top-right-radius: 23px;
+    border-bottom-right-radius: 23px;
+    cursor: pointer;
+}
+
+.shades {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.sh button {
+    padding: 7px 14px;
+    border: none;
+    font-size: 1rem;
+}
+
+.dark button {
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    transition: box-shadow 0.3s;
+}
+
+.dark button:hover {
+    box-shadow: 0px 0px 8px rgb(0, 0, 0), 0px 0px 14px rgb(0, 0, 0);
+}
+
+.light button {
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+
+.light button:hover {
+    box-shadow: 0px 0px 8px rgb(253, 253, 253), 0px 0px 14px rgb(255, 255, 255);
+}
+
+.reset {
+    width: auto;
+    margin: 10px;
+}
+
+.reset button {
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: box-shadow 0.3s;
+    border: none;
+}
+
+.reset button:hover {
+    box-shadow: 0px 0px 8px rgb(255, 4, 4), 0px 0px 14px rgb(255, 0, 0);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 84vh;
+    justify-content: center;
+    padding: 20px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%; 
+    max-width: 600px;
+    height: 100%;
+    max-height: 30vh;
+    padding: 20px;
+    border-radius: 14px;
+    border: 2px solid white;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.Btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top:3em;
+}
+
+.Btn button {
+    min-width: 120px;
+    padding: 12px 20px;
+    height: auto;
+    border-radius: 14px;
+    width:100%;
+    transition: box-shadow 0.3s;
+    font-size: 1rem;
+    cursor:pointer;
+}
+
+.Btn button:hover {
+    box-shadow: 0px 0px 8px rgb(253, 253, 253), 0px 0px 14px rgb(255, 255, 255);
+}
+@media (max-width: 768px) {
+    .logo h1 {
+        font-size: 1.8rem;
+    }
+
+    .search {
+        max-width: 70%;
+    }
+
+    .option {
+        width: 90%;
+    }
+
+    .Btn button {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .shades {
+        flex-direction: column;
+        width: 100%;
+        gap: 5px;
+    }
+    .sh button{
+        border-radius: 23px;
+    }
+
+    .Btn button {
+        width: 100%;
+    }
+}
