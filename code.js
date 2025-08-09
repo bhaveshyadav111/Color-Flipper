@@ -9,7 +9,7 @@ let light = document.querySelector(".lightBtn")
 let reset = document.querySelector(".resetBtn")
 let sBtn = document.querySelector('.sBtn')
 let searchInput = document.querySelector('.search input')
-
+// search colors
 sBtn.addEventListener("click",()=>{
     let inputVal = searchInput.value;
     color.textContent = rgbColor(inputVal)
